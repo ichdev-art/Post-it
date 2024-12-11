@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: none;
+}
+li {
+    list-style: none;
+}
+.tableau {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 25% 75%;
+    height: 100vh;
+}
+.tai {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.all-post-it {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ul {
+    display: grid;
+
+}
