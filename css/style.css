@@ -2,79 +2,129 @@
     margin: 0;
     padding: 0;
 }
+
 textarea {
     resize: none;
+    margin-top: 1rem;
 }
 li {
     list-style: none;
 }
+
 .tableau {
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 100vh;
-    background-image: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/105/1059/1059848/snowfall-on-deep-blue-night-sky-seamless-pattern-f.jpg?1457279389);
+    height: 100%;
+    background-image: url(../img/DALL·E\ 2024-12-11\ 13.24.13\ -\ A\ seamless\ pattern\ of\ beautiful\,\ intricate\ snowflakes\ falling\ on\ a\ deep\ blue\ night\ sky.\ The\ snowflakes\ should\ be\ highly\ detailed\ with\ unique\,\ artistic.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .tai {
     display: grid;
+    background: #087bbec2;
+    align-items: start;
 }
+
 .all-post-it {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
+
 ul {
     display: grid;
     margin: 1rem;
     color: white;
 }
+
 li {
     margin: 1rem;
     padding: 1rem;
     text-align: center;
     font-weight: bold;
 }
-button{
+
+button {
     margin-left: 1rem;
     padding: 1rem;
     color: white;
 }
-input,textarea {
+
+input,
+textarea {
     width: 100%;
     border: solid 0.2rem black;
 }
-input{
+
+input {
     height: 2rem;
+    margin-top: 1rem;
 }
+
 button.cancel {
     background: red;
 }
-button.confirmed{
+
+button.confirmed {
     background: green;
 }
-form{
-    background: #087bbec2;
+
+.all-post-it {
+
 }
-.post-it{
+.post-it {
     background: #eae672;
     border: solid 0.1rem black;
+    border-radius: 5px 5px 20px 20px;
     width: 90%;
     height: 90%;
     box-shadow: 2px 2px 5px black;
     font-size: 1rem;
     -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  transform: rotate(2deg);
-  /* display: none; */
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    overflow: hidden;
+    word-wrap: break-word;
+}
+p {
+    text-align: start;
+    margin-top: 1rem;
+    font-size: 2rem;
 }
 
-h1 {
-    text-align: center;
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    padding-top: 0;
+    background: #eae672;
+    border: none;
 }
-p{
-    text-align: start;
-    margin-top: 5rem;
-    font-size: 2rem;
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 1rem;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
 }
