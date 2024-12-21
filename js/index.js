@@ -1,3 +1,6 @@
+const removee = document.getElementById("suppr")
+
+
 document.getElementById("register").addEventListener("click", function () {
     let titre = document.getElementById("titre").value
     let text = document.getElementById("txt").value
@@ -11,3 +14,7 @@ document.getElementById("cancell").addEventListener("click", function () {
 function supprimer(el) {
     el.parentElement.remove()
 }
+
+removee.addEventListener("click", () => {
+    document.getElementById("post-it").innerHTML = ""
+})
